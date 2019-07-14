@@ -1,4 +1,4 @@
-console.log('GOOD LUCK 👩‍💻 👨‍💻')
+
 /* Q1:
 Create a function called hello
 thats take a name
@@ -12,10 +12,17 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
-  // WRITE YOUR CODE UNDER THIS LINE  
+function hello(name) {
+  if(name ==="" || name === null)
+  {
+    return null;
+  }
+  else
+  return "heloo "+ name +" !"
+
 
 }
+
 
 
 /* Q2:
@@ -32,10 +39,16 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
-  // WRITE YOUR CODE UNDER THIS LINE 
+function calculateTax(num1 ,num2) {
+  var tax;
+  tax= num1*num2;
+  var notSales;
+  notSales= num1-tax;
+  return "You got" + num1 +"JD from sales, you should pay"+tax+ "JD for tax and you will have"+notSales +"JD as net sales."
+
 
 }
+
 
 
 /* Q3:
@@ -52,10 +65,18 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function repeatChar(string ,number) {
+  var odd ;
+
+  while (number) {
+
+    return string.uppercase.string
+
+  }
+    
 
 }
+
 
 
 /* Q4:
@@ -72,8 +93,8 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function stringToCapital(string) {
+        
 
 }
 
